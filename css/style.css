@@ -41,7 +41,12 @@ nav ul{
 }
 
 
-
+.invertir-h{
+    transform: scaleX(-1);
+}
+.invertir-y{
+    transform: scaleY(-1);
+}
 .center{
     text-align: center;
 }
@@ -72,8 +77,16 @@ nav ul{
     width: 10%;
     height: 10%;
 }
-
-
+.small-text{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.small-text-right{
+    display: flex;
+    justify-content: right;
+}
 
 
 .navbar-link{
@@ -178,7 +191,6 @@ nav ul{
 }
 .card-duble-img{
     height: 500px;
-    overflow:auto;
     background: rgb(161, 250, 109);
     border-radius: 0.5rem;
     border: black solid 2px;
@@ -216,6 +228,7 @@ nav ul{
     padding: 1.8rem;
     text-align: center;
     line-height: 1.5;
+    font-size: large;
     color: grey;
     border: 5px solid rgb(0, 0, 0);
 }
@@ -327,7 +340,10 @@ nav ul{
     }
 }
 
-@media (max-width: 1214px){
+@media (max-width: 1290px){
+    .card-duble-img{
+        overflow: auto;
+    }
     .card-duble-img{
         flex-direction: column;
     }
