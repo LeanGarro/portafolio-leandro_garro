@@ -178,7 +178,7 @@ nav ul{
 }
 .card-duble-img{
     height: 500px;
-    overflow: hidden;
+    overflow:auto;
     background: rgb(161, 250, 109);
     border-radius: 0.5rem;
     border: black solid 2px;
@@ -198,11 +198,19 @@ nav ul{
     margin-left: 400px;
     border-radius: 15%;
 }
+.card-img-right:hover{
+    transform: scale(1.1);
+    transition: all 400ms ease;
+}
 .card-img-major{
     width: auto; 
     height: auto;
     border-radius: 10%;
     padding: 1rem 4rem;
+}
+.card-img-major:hover{
+    transform: scale(1.1);
+    transition: all 400ms ease;
 }
 .card-duble-text{
     padding: 1.8rem;
@@ -320,5 +328,11 @@ nav ul{
 }
 
 @media (max-width: 1214px){
-    
+    .card-duble-img{
+        flex-direction: column;
+    }
+    .card-img-right{
+        margin-left: 35%;
+        margin-top: -20%;
+    }
 }
